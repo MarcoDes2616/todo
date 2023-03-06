@@ -27,11 +27,6 @@ app.use(userRoutes);
 app.use(todosRoutes);
 
 
-app.get("/", (req, res) => {
-    res.send("welcome to my API");
-});
-
-
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`)
 });
